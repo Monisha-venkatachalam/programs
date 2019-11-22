@@ -1,0 +1,46 @@
+#include<iostream.h>
+#include<conio.h>
+#include<string.h>
+class A
+{
+public:
+char a[20], b[20];
+void getdata()
+{
+cout<<"\n Enter A :";
+cin>>a;
+cout<<"\n Enter B :";
+cin>>b;
+}
+};
+class B: public A
+{
+public:
+void cat()
+{
+srtcat(a, b);
+cout<<"\n string concatenate :"<<a;
+}
+};
+class C: public A
+{
+public:
+void cmp()
+{
+if(strcmp(a, b)==0)
+cout<<"\n strings are equal";
+else
+cout<<"\n strings are not equal";
+}
+};
+void main()
+{
+clrscr();
+B obj1;
+C obj2;
+obj1.getdata();
+obj1.cat();
+obj2.getdata();
+obj2.cmp();
+getch();
+}
