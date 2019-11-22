@@ -1,0 +1,62 @@
+#include<stdio.h>
+#include<conio.h>
+#include<string.h>
+void main()
+{
+int l, n;
+char a[20], b[20];
+clrscr();
+printf("\n STRING OPERATIONS\t  \n1.String Concatenation\t  \n2.String Compare\t   \n3.String Copy\t  \n4.String Length\t  \n5.String Uppercase\t  \n6.String Lowercase\t  \n7.String Reverse\t  \n8.String Duplicate\t");
+printf("\n Enter your choice:");
+scanf("%d", &n);
+if(n<=2)
+printf("\nEnter A and B value :");
+else if(n<=8)
+printf("\nEnter A value :");
+else
+printf("\nAttempt fails");
+switch(n)
+{
+case 1:
+scanf("%s%s", &a, &b);
+strcat(a, b);
+printf("\n String concatenation :%s\t", a);
+break;
+case 2:
+scanf("%s%s", &a, &b);
+if(strcmp(a, b)==0)
+printf("\n Strings are equal");
+else
+printf("\n Strings are not equal");
+break;
+case 3:
+scanf("%s", &a);
+strcpy(b, a);
+printf("\n String copy :%s\t", b);
+break;
+case 4:
+scanf("%s", &a);
+l=strlen(a);
+printf("\n length of string :%d\t", l);
+break;
+case 5:
+scanf("%s", &a);
+printf("\n String uppercase:%s\n",strupr(a));
+break;
+case 6:
+scanf("%s", &a);
+printf("\n String lowercase :%s\n",strlwr(a));
+break;
+case 7:
+scanf("%s", &a);
+printf("\n String reverse :%s\n",strrev(a));
+break;
+case 8:
+scanf("%s", &a);
+printf("\n String duplicate :%s\n",strdup(a));
+break;
+default:
+printf("\n wrong entry");
+} 
+getch();
+}
