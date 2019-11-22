@@ -1,0 +1,33 @@
+<html>
+<head><title>Regstration Form</title>
+</head>
+<body>
+<center><b><font color="blue"><h1>Job Application Form</h1></center></b></font>
+<center><b><h3>(Document, Submit, Reset, Link)</center></h3></b>
+<form action="file name.html" method="post">
+Name :<input type="text box" name="ss" size="25"><br><br>
+<b>DOB :</b><br><br>
+Date<input type="number" name="Date" size="10">
+Month<input type="number" name="Month" size="10">
+Year<input type="number" name="Year" size="10"><br><br>
+<b>Gender :</b><br><br>
+Male<input type="radio" name="gg" size="5">
+Female<input type="radio" name="yy" size="5"><br><br>
+Qualification :
+<select name="gg" size="1">
+<option value=1>10<sup>th</sup>
+<option value=2>12<sup>th</sup>
+<option value=3>Degree
+</option value>
+<select><br><br>
+Address :<input type="number" name="ss" size="30"><br><br>
+Phone number :<input type="number" name="dd" size="20"><br><br>
+Email-Id :<input type="text box" name="ds"  size="20"><br><br>
+State :<input type="text box" name="ss" size="10"><br><br>
+Languages :<input type="text box" name="ss" size="10"><br><br>
+<input type="Submit" name="ss" value="Submit" size="6">
+<input type="Reset" name="gg" value="Reset" size="6">
+<a href="program1.html" target="10.html">Download</a>
+</form>
+</body>
+</html>
