@@ -1,0 +1,47 @@
+#include<iostream.h>
+#include<conio.h>
+#include<string.h>
+class A
+{
+public:
+char a[20], b[20];
+int l;
+void getdata()
+{
+cout<<"\n Enter A :";
+cin>>a;
+}
+};
+class B: public A
+{
+public:
+void cpy()
+{
+srtcpy(b,a);
+cout<<"\n string copy:"<<b;
+cout<<"\n string duplicate :"<<strdup(a);
+cout<<"\n string uppercase :"<<strupr(a);
+}
+};
+class C: public A
+{
+public:
+void len()
+{
+l=strlen(a);
+cout<<"\n string length:"<<l;
+cout<<"\n string lowercase :"<<strlwr(a);
+cout<<"\n string reverse :"<<strrev(a);
+}
+};
+void main()
+{
+clrscr();
+B obj1;
+C obj2;
+obj1.getdata();
+obj1.cpy();
+obj2.getdata();
+obj2.len();
+getch();
+}
